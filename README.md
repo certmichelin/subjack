@@ -19,7 +19,8 @@ Subjack will also check for subdomains attached to domains that don't exist (NXD
 
 Requires [Go](https://golang.org/dl/)
 
-`go get github.com/haccer/subjack`
+`git config --global url.git@github.com:.insteadOf https://github.com/`
+`go get github.com/certmichelin/subjack`
 
 ## How To Use:
 
@@ -53,7 +54,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/haccer/subjack/subjack"
+	"github.com/certmichelin/subjack/subjack"
 )
  
 
