@@ -2,10 +2,13 @@
 	{
 		"service": "fastly",
 		"cname": [
+			"global.prod.fastly.net",
+			"map.fastly.net",
 			"fastly"
 		],
 		"fingerprint": [
-			"Fastly error: unknown domain"
+			"Fastly error: unknown domain:",
+			"Please check that this domain has been added to a service"
 		],
 		"nxdomain": false
 	},
@@ -22,7 +25,9 @@
 	{
 		"service": "heroku",
 		"cname": [
-			"herokuapp"
+			"herokuapp",
+			"herokudns.com",
+			"herokussl.com"
 		],
 		"fingerprint": [
 			"herokucdn.com/error-pages/no-such-app.html"
@@ -32,7 +37,8 @@
 	{
 		"service": "pantheon",
 		"cname": [
-			"pantheonsite.io"
+			"pantheonsite.io",
+			"404 error unknown site!"
 		],
 		"fingerprint": [
 			"The gods are wise, but do not know of the site which you seek."
@@ -152,7 +158,8 @@
 	{
 		"service": "intercom",
 		"cname": [
-			"custom.intercom.help"
+			"custom.intercom.help",
+			"intercom.io"
 		],
 		"fingerprint": [
 			"This page is reserved for artistic dogs.",
@@ -217,7 +224,8 @@
 		"cname": [
 			"bcvp0rtal.com",
 			"brightcovegallery.com",
-			"gallery.video"
+			"gallery.video",
+			"brightcove.com"
 		],
 		"fingerprint": [
 			"<p class=\"bc-gallery-error-code\">Error Code: 404</p>"
@@ -240,7 +248,8 @@
 			"createsend.com"
 		],
 		"fingerprint": [
-			"Double check the URL or <a href=\"mailto:help@createsend.com"
+			"Double check the URL or <a href=\"mailto:help@createsend.com",
+			"'Trying to access your account?'"
 		],
 		"nxdomain": false
 	},
@@ -287,7 +296,8 @@
 	{
 		"service": "jetbrains",
 		"cname": [
-			"myjetbrains.com"
+			"myjetbrains.com",
+			"jetbrains.com"
 		],
 		"fingerprint": [
 			"is not a registered InCloud YouTrack."
@@ -297,32 +307,46 @@
 	{
 		"service": "azure",
 		"cname": [
+			".accesscontrol.windows.net",
 			".azurewebsites.net",
 			".cloudapp.net",
 			".cloudapp.azure.com",
 			".trafficmanager.net",
+			".biztalk.windows.net",
 			".blob.core.windows.net",
 			".azure-api.net",
 			".azurehdinsight.net",
-			".azureedge.net"
+			".azureedge.net",
+			".azurecontainer.io",
+			".azurefd.net",
+			".azure-mobile.net",
+			".database.windows.net",
+			".azuredatalakestore.net",
+			".search.windows.net",
+			".azurecr.io",
+			".file.core.windows.net",
+			".graph.windows.net",
+			".management.core.windows.net",
+			".onmicrosoft.com",
+			".origin.mediaservices.windows.net",
+			".queue.core.windows.net",
+			".redis.cache.windows.net",
+			".servicebus.windows.net",
+			".table.core.windows.net",
+			".trafficmanager.net",
+			".web.core.windows.net",
+			".visualstudio.com",
+			".vo.msecnd.net"
 		],
 		"fingerprint": [],
 		"nxdomain": true
 	},
 	{
-		"service": "zendesk",
-		"cname": [
-			"zendesk.com"
-		],
-		"fingerprint": [
-			"Help Center Closed"
-		],
-		"nxdomain": false
-	},
-	{
 		"service": "readme",
 		"cname": [
-			"readme.io"
+			"readme.io",
+			"cname.readme.io",
+			"ssl.readmessl.com"
 		],
 		"fingerprint": [
 			"Project doesnt exist... yet!"
@@ -354,5 +378,239 @@
 			"Hello! Sorry, but the website you&rsquo;re looking for doesn&rsquo;t exist.</p>\n<a href=\"https://worksites.net/\">Learn more about Worksites.net"
 		],
 		"nxdomain": false
+	},
+	{
+		"service": "anima",
+		"cname": [
+			"animaapp.com"
+		],
+		"fingerprint": [
+			 "Missing Website",
+			 "If this is your website and you've just created it, try refreshing in a minute."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "canny",
+		"cname": [
+			"canny.io",
+			"cname.canny.io"
+		],
+		"fingerprint": [
+			"Company Not Found",
+			"There is no such company. Did you enter the right URL?"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "digitaloceanspaces",
+		"cname": [
+			"digitaloceanspaces.com"
+		],
+		"fingerprint": [
+				"</BucketName><RequestId>tx000000000000",
+				"Domain uses DO name serves with no records in DO."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "fly",
+		"cname": [
+			"fly.io",
+			"shw.io"
+		],
+		"fingerprint": [],
+		"nxdomain": false
+	},
+	{
+		"service": "fider",
+		"cname": [
+			"fider.io"
+		],
+		"fingerprint": [],
+		"nxdomain": false
+	},
+	{
+		"service": "kinsta",
+		"cname": [
+			"kinsta.com"
+		],
+		"fingerprint": [
+			"No Site For Domain"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "netlify",
+		"cname": [
+			".netlify.com"
+		],
+		"fingerprint": [],
+		"nxdomain": false
+	},
+	{
+		"service": "ngrok",
+		"cname": [
+			"ngrok.io"
+		],
+		"fingerprint": [],
+		"nxdomain": false
+	},
+	{
+		"service": "pingdom",
+		"cname": [
+			"stats.pingdom.com"
+		],
+		"fingerprint": [],
+		"nxdomain": false
+	},
+	{
+		"service": "webmin",
+		"cname": [
+			"webmin"
+		],
+		"fingerprint": [],
+		"nxdomain": false
+	},
+	{
+		"service": "bitly",
+		"cname": [
+			"cname.bitly.com"
+		],
+		"fingerprint": [
+			"Hey There, This Is A Branded Short Domain."
+		],
+		"verify": {
+			"cname": true
+		},
+		"nxdomain": false
+	},
+	{
+		"service": "cargo",
+		"cname": [
+			""
+		],
+		"fingerprint": [
+			"If you're moving your domain away from Cargo you must make this configuration through your registrar's DNS control panel."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "cargocollective",
+		"cname": [
+			"cargocollective.com"
+		],
+		"fingerprint": [
+			"Connect it by adding it to your Settings."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "datocms",
+		"cname": [
+			"datocms.com"
+		],
+		"fingerprint": [],
+		"nxdomain": false
+	},
+	{
+		"service": "google",
+		"cname": [
+			"google.com"
+		],
+		"fingerprint": [
+			"The requested URL / was not found on this server. That's all we know."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "naver",
+		"cname": [
+			""
+		],
+		"fingerprint": [
+			"개인도메인 설정이 완료되지 않았습니다"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "uberflip",
+		"cname": [
+			""
+		],
+		"fingerprint": [
+			"Non-hub domain, The URL you've accessed does not provide a hub."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "vercel",
+		"cname": [
+			"vercel-dns.com"
+		],
+		"fingerprint": [
+			"The deployment could not be found on Vercel."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "wufoo",
+		"cname": [
+			""
+		],
+		"fingerprint": [
+			"Profile not found",
+			"Hmmm....something is not right."
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "kickoffpages.com",
+		"cname": [
+			"kickofflabs.edgeapp.net"
+		],
+		"fingerprint": [
+			"Landing Page Not Found"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "DIVIO",
+		"cname": [
+			".aldryn.io"
+		],
+		"fingerprint": [
+			"No application configured"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "EC2",
+		"cname": [
+			".compute.amazonaws.com"
+		],
+		"fingerprint":[],
+		"nxdomain": true
+	},
+	{
+		"service": "cloudfront",
+		"cname": [
+			".cloudfront.net"
+		],
+		"fingerprint": [
+			"ERROR: The request could not be satisfied"
+		],
+		"nxdomain": false
+	},
+	{
+		"service": "gemfury",
+		"cname": [
+			"furyns.com"
+		],
+		"fingerprint": [
+			"https://gemfury.com/404"
+		],
+		"nxdomain": false,
+		"checkall": true
 	}
 ]
